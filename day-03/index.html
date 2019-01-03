@@ -65,9 +65,9 @@
       const suffix = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
     }
-
+    
     controls.forEach(control => {
-      control.addEventListener('mousemove', handleUpdate)
+      control.addEventListener('input', handleUpdate)
     })
   </script>
 
