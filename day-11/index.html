@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="player">
+     <video class="player__video viewer" src="652333414.mp4"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+       <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+       <button data-skip="-10" class="player__button">« 10s</button>
+       <button data-skip="25" class="player__button">25s »</button>
+       <svg class="fullscreen" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="50px" height="30px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M65,23.7h11.2V35c0,2.1,1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8V20l0,0c0-2.1-1.7-3.7-3.8-3.8H65c-2.1,0-3.8,1.7-3.8,3.8  S62.9,23.7,65,23.7z"></path><path d="M35,68.7h30c2.1,0,3.7-1.7,3.8-3.7c0,0,0,0,0,0V35c0-2.1-1.7-3.7-3.8-3.7l0,0H35c-2.1,0-3.7,1.7-3.8,3.7c0,0,0,0,0,0v30  C31.2,67.1,32.9,68.7,35,68.7z M38.8,38.7h22.5v22.5H38.8V38.7z"></path><path d="M20,83.7h15c2.1,0,3.8-1.7,3.8-3.8s-1.7-3.8-3.8-3.8H23.8V65c0-2.1-1.7-3.8-3.8-3.8s-3.8,1.7-3.8,3.8v15  C16.3,82.1,17.9,83.7,20,83.7z"></path></svg>
+     </div>
+   </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
