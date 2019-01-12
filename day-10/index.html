@@ -96,62 +96,35 @@
   </div>
 
   <script>
-    const inputs = document.querySelectorAll('input');
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 
-    function multiSelect(firstSelection, shiftSelection) {
+    let lastChecked;
 
-    };
+    function handleCheck(e) {
+      // Check if they had the shift key down
+      // AND check that they are checking it
+      let inBetween = false;
+      if (e.shiftKey && this.checked) {
+        // go ahead and do what we please
+        // loop over every single checkbox
+        checkboxes.forEach(checkbox => {
+          console.log(checkbox);
+          if (checkbox === this || checkbox === lastChecked) {
+            inBetween = !inBetween;
+            console.log('Starting to check them in between!');
+          }
 
-    // get the index of the first selection
-    // get the index of the shift selection
-    // class all elems between those to indicies
-    const range = {};
+          if (inBetween) {
+            checkbox.checked = true;
+          }
+        });
+      }
 
-    inputs.forEach( input => {
-      input.addEventListener('click', function(e) {
-        const inbox = this.parentElement.parentElement;
-        const inputArr = Array.from(inbox.children);
-        const i = Array.prototype.indexOf.call(inbox.children, this.parentElement);
+      // Reassigning lastChecked on every click
+      lastChecked = this;
+    }
 
-        if(e.shiftKey) {
-          // reset the end
-          const items = document.querySelectorAll('.item')
-          items.forEach(item => item.classList.remove('end'));
-
-          range.end = Array.prototype.indexOf.call(inbox.children, this.parentElement);
-          
-          this.parentElement.classList.add('end');
-          // console.log('Shift Selection ', i);
-        } else {
-          // reset the start
-          const items = document.querySelectorAll('.item')
-          items.forEach(item => item.classList.remove('start'));
-
-          range.start = Array.prototype.indexOf.call(inbox.children, this.parentElement);
-          
-          this.parentElement.classList.add('start');
-          // console.log('First Selection ', i);
-        }
-
-        console.log(range);
-
-        if(range.hasOwnProperty('start') && range.hasOwnProperty('end')) {
-          inputArr.forEach( (input, i) => {
-            if(range.start > range.end) {
-              if(i >= range.end && i <= range.start) {
-                input.classList.add('checked');
-              }  
-            } else {
-              if(i >= range.start && i <= range.end) {
-                input.classList.add('checked');
-              }
-            }
-          });
-        }
-      });
-    });
-
-    console.log(document.querySelector(':checked'));
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
   </script>
 </body>
 </html>
