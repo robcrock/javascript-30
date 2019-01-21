@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+</head>
+<body class="bod">
+
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit; 
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: thistle;
+  }
+
+  .two {
+    background: mistyrose;
+  }
+
+  .three {
+    background: coral;
+  }
+</style>
+
+<button></button>
+<script>
+  const divs = document.querySelectorAll('div');
+  
+  function logText(e) {
+    // Bubbling happens when clicking on nested elements so that
+    // the event ripples all the way up.
+
+    // The way capture works is by traversing the DOM tree to the
+    // element you clicked on and then from the fires the eventlisteners
+    // as it bubbles back up to the parent most element.
+    console.log(this.classList.value);
+    // e.stopPropagation(); // stop bubbling
+  }
+
+  // If we add a third argument of capture and set it to true - like
+  // {capture: true} - the eventlistener will be fired on the way to
+  // the element rather than on the bubble down.
+
+  // Setting once to true - very new feature - means that the event listener
+  // will only have a life span of one run. Once it's run the event listener
+  // will unbind itself from the element. Wes has used this in the creation
+  // of online store checkouts so that the buyers can only click that button
+  // one time.
+  divs.forEach(div => div.addEventListener('click',
+    logText,
+    { capture: false,
+      once: true
+    })
+  );
+
+</script>
+</body>
+</html>
