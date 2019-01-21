@@ -46,7 +46,6 @@
   };
 
   function setVoice() {
-    console.log(voices);
     msg.voice = voices.find(voice => `${voice.name} (${voice.lang})` === this.value);
     toggle();
   }
