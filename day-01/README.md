@@ -1,0 +1,2 @@
+# JavaScript Drum Kit
+Every key we press has a code attached to it. Today's lesson was a fun way to tie those [Key Codes](http://keycode.info/) to sounds. This lesson will reinforce the [classlist](https://www.w3schools.com/jsref/prop_element_classlist.asp) methods or add, remove and toggle if you aren't already familiar.
