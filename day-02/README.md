@@ -1,0 +1,4 @@
+# JavaScript Clock
+It's funny looking back on my notes for today. All I basically said was that I spend way too much time on this exercise. Wes transformed the rotation property of of divs and I wanted to try something a little different using SVGs I created in Sketch. A+ for effort, but this was not a fun day. Sketch does not cleaning export SVGs so I have to clean up the raw SVG and beat my head against why these things weren't working the way I wanted them to for hours and hours.
+
+In the end I did prevail and learned a bit about [viewbox](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox) and [transforms](https://developer.mozilla.org/es/docs/Web/SVG/Attribute/transform).
