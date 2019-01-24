@@ -1,4 +1,3 @@
-
 # Update CSS Variables with JS
 Loved what we were able to accomplish today. The controls look nice and the end result is a fun way to manipulate hero images. The main point made was to learn about and leverage [CSS variables](https://www.w3schools.com/css/css3_variables.asp). Specifically, how to reference the var(-prop) with JavaScript and how to update the [documentElement](https://www.w3schools.com/jsref/prop_document_documentelement.asp).
 
