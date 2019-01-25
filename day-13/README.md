@@ -1,0 +1,2 @@
+# Slide in on Scroll
+There not much needed to get this feature working properly, but it was tricky to troubleshoot. My advice to anyone doing this for the first time would be to take it one logical step at a time and make sure you understand everything that’s happening through console.logs as you go through the process scrolling and trying to target specific positions on the screen.

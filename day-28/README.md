@@ -1,0 +1,2 @@
+# Video Speed Scrubber
+So many parallels between what was built here and how we think about constructing data visualization. We basically made the scales to adjust the cursor position to the positions within the element we want to map these interactions too. Ha, lessons like these make me feel THAT much better about practicing my JS skills and not only data vis.

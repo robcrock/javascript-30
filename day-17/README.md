@@ -1,0 +1,2 @@
+# Sort without Articles
+Lot’s of good thing picked up here. Regex is definitely a powerful tool for string matching and I’m sure much more. I found both this reference and this tool helpful in exploring the different ways you could target strings. Another thing worth mentioning is how fun is to push yourself beyond the simple alphabetic sort to one that’s going to be more useful to the end users. Usability matters!

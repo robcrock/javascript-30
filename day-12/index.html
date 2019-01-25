@@ -10,6 +10,8 @@
   let seq = [];
   const secret = 'wesbos';
 
+  document.querySelector('body').textContent = `Type "${secret}"`;
+
   window.addEventListener('keyup', e => {
     seq.push(e.key);
     // This logic allows up to compare only previous N number of keys

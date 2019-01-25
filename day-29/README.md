@@ -1,0 +1,2 @@
+# JS Timer
+Probably would’ve learned more if I wasn’t working on this so late, but definitely learned a lot and had a couple refreshers. Two points worth mentioning was the static Date.now() and the document.name reference. Basically, if the element you are targeting has a name attribute you don't need to use querySelector to can address the name itself.

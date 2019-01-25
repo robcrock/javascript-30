@@ -1,0 +1,2 @@
+# Array Cardio 2
+Another fun day with arrays. I honestly don’t work with dates much but we did that as well as leverage the new some and every method that I need to keep handy when filtering arrays. Rather than coming up with the condintions myself I can just leverage this functions. I had also never used the splice method, but that proved useful when deleting a specific element from an array. [Here](https://love2dev.com/blog/javascript-remove-from-array/) some other ways to delete elements.

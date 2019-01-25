@@ -1,0 +1,2 @@
+# Detect Secret
+This was a relatively easy day. This is partially thanks to how easy it was to capture keystrokes. The coolest thing we learn was a little splice logic that helped us compare a secret to the keys press. Remember that arrays will never equal one another. This is why we need to use join on the keys pressed rather than split on the array.

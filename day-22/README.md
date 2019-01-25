@@ -1,0 +1,2 @@
+# Follow Along Navigation
+This is much more my speed. I like examples of UX ideas I can apply to my own interfaces. BTW, getBoundingClientRect of a powerful object to use over and over in D3. I’m sure to be revisiting this lesson often.

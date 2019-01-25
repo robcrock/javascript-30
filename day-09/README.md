@@ -1,0 +1,2 @@
+# Cool Console Tricks
+Cool course on console tips and tricks. Not sure I’ll be using everything mentioned here, but I could definitely see how the console can be made more is helpful to devs in production applications.

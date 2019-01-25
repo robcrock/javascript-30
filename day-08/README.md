@@ -1,0 +1,2 @@
+# Fun with HTML5 Canvas
+Honestly, this was a confusing module. Canvas handles JS very differently. I know I was mainly just copy-pasting from Wes here, but it was a cool chance to do a little visualization in this course on JS and see one fun thing you can do with Canvas. I may revisit later as there's clearly a lot of opportuntiy for creative expression.
